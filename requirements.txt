@@ -1,0 +1,26 @@
+# RAG System for Utility/Sensor Documents
+# ----------------------------------------
+# Core: always required
+numpy>=1.24.0
+scikit-learn>=1.3.0
+click>=8.1.0
+
+# Anthropic SDK: required for AI answer generation
+# (system works in retrieval-only mode without ANTHROPIC_API_KEY)
+anthropic>=0.28.0
+
+# Optional: BM25 keyword search acceleration
+# If not installed, a pure-Python BM25 fallback is used automatically
+rank-bm25>=0.2.2
+
+# Optional: PDF loading
+# If not installed, falls back to raw byte extraction (lower quality)
+PyPDF2>=3.0.0
+
+# Optional: Semantic embeddings (stronger than TF-IDF)
+# Requires ~500MB+ for model download on first use
+# sentence-transformers>=2.7.0
+
+# Development / testing (uncomment as needed)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0

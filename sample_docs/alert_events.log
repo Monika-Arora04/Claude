@@ -1,0 +1,37 @@
+2024-01-15 00:20:05 WARNING  [TEMP-001]   Temperature rising: 81.7°C (threshold: 80.0°C) | Location: Boiler Room A | Escalation: Level-1
+2024-01-15 00:25:10 WARNING  [PRES-002]   Pressure rising: 4.89 bar (threshold: 4.75 bar) | Location: Pipeline Section 3 | Escalation: Level-1
+2024-01-15 00:25:33 WARNING  [HUM-003]    Humidity elevated: 62.4% (threshold: 60.0%) | Location: Storage Tank B | Escalation: Level-1
+2024-01-15 00:30:01 CRITICAL [TEMP-001]   Temperature critical: 87.2°C (threshold: 85.0°C) | Location: Boiler Room A | Escalation: Level-2 | Operator notified: J.Harrington
+2024-01-15 00:30:04 CRITICAL [PRES-002]   Pressure critical: 5.21 bar (threshold: 5.00 bar) | Location: Pipeline Section 3 | Escalation: Level-2 | PRV-303 active
+2024-01-15 00:30:15 CRITICAL [HUM-003]    Humidity critical: 71.5% (threshold: 70.0%) | Location: Storage Tank B | Escalation: Level-2 | Operator notified: P.Nguyen
+2024-01-15 00:30:22 WARNING  [FLOW-004]   Flow rate declining: 9.2 L/min (nominal: 12.4 L/min) | Location: Coolant Line 1 | Escalation: Level-1
+2024-01-15 00:35:00 CRITICAL [TEMP-001]   Temperature peak: 89.0°C (max recorded this event) | Location: Boiler Room A
+2024-01-15 00:35:11 CRITICAL [PRES-002]   Pressure peak: 5.45 bar (max recorded this event) | Location: Pipeline Section 3
+2024-01-15 00:35:41 CRITICAL [HUM-003]    Humidity peak: 74.2% (max recorded this event) | Location: Storage Tank B
+2024-01-15 00:40:05 CRITICAL [FLOW-004]   Flow rate critical: 6.5 L/min (threshold: 7.0 L/min) | Location: Coolant Line 1 | Escalation: Level-2 | Operator notified: A.Kowalski
+2024-01-15 00:50:00 CRITICAL [FLOW-004]   Flow rate severe: 4.1 L/min | Pump P-204 suspected failure | Location: Coolant Line 1 | Escalation: Level-3 | MAINTENANCE DISPATCH
+2024-01-15 00:50:22 CRITICAL [VIB-006]    Vibration critical: 1.87 mm/s (threshold: 1.5 mm/s) | Location: Pump Station 2 | Escalation: Level-2 | Correlated with FLOW-004 event
+2024-01-15 00:55:01 INFO     [TEMP-001]   Temperature returning to normal: 82.3°C | Location: Boiler Room A
+2024-01-15 00:55:40 INFO     [PRES-002]   Pressure returning to normal: 4.44 bar | Location: Pipeline Section 3
+2024-01-15 00:55:55 INFO     [HUM-003]    Humidity declining: 49.7% | Location: Storage Tank B
+2024-01-15 01:00:00 INFO     [TEMP-001]   RESOLVED: Temperature normal: 78.9°C | Duration: 40 min | Max: 89.0°C | Boiler Room A
+2024-01-15 01:00:03 INFO     [PRES-002]   RESOLVED: Pressure normal: 4.18 bar | Duration: 35 min | Max: 5.45 bar | Pipeline Section 3
+2024-01-15 01:00:07 INFO     [HUM-003]    RESOLVED: Humidity normal: 46.3% | Duration: 35 min | Max: 74.2% | Storage Tank B
+2024-01-15 01:00:30 CRITICAL [FLOW-004]   Flow rate critically low: 3.0 L/min | Pump P-204 bearing failure confirmed | Location: Coolant Line 1
+2024-01-15 01:00:45 CRITICAL [VIB-006]    Vibration peak: 2.35 mm/s | Location: Pump Station 2 | Bearing failure in progress
+2024-01-15 01:05:00 INFO     [SYSTEM]     Maintenance team on site: A.Kowalski, D.Fletcher | WO-2024-0089 opened
+2024-01-15 01:10:00 INFO     [SYSTEM]     LOTO procedure initiated on Pump P-204 | Operator: A.Kowalski
+2024-01-15 01:15:22 INFO     [FLOW-004]   Sensor isolated: Pump P-204 offline for maintenance | Expected return: 07:00
+2024-01-15 01:15:22 INFO     [VIB-006]    Sensor isolated: Pump P-204 offline for maintenance
+2024-01-15 03:15:00 INFO     [HUM-003]    Dehumidifier DEHUM-B1 restored to service | Humidity steady at 52.1%
+2024-01-15 07:00:00 INFO     [FLOW-004]   Pump P-204 returned to service | Flow rate: 12.4 L/min | Location: Coolant Line 1
+2024-01-15 07:00:12 INFO     [VIB-006]    Post-repair vibration: 0.43 mm/s | Normal | Location: Pump Station 2
+2024-01-15 07:05:00 INFO     [SYSTEM]     WO-2024-0089 CLOSED: Pump P-204 bearing replacement complete | Total downtime: 5h 50min
+2024-01-15 07:05:01 INFO     [SYSTEM]     All sensors nominal. Incident summary: 3 concurrent alerts resolved, 1 pump failure repaired.
+2024-01-15 08:00:00 INFO     [SYSTEM]     Daily system health check: PASS | All 6 sensors online | No active alerts
+2024-01-15 08:00:01 INFO     [TEMP-001]   Daily check: 78.2°C | Normal | Boiler Room A
+2024-01-15 08:00:01 INFO     [PRES-002]   Daily check: 4.14 bar | Normal | Pipeline Section 3
+2024-01-15 08:00:01 INFO     [HUM-003]    Daily check: 46.8% | Normal | Storage Tank B
+2024-01-15 08:00:01 INFO     [FLOW-004]   Daily check: 12.4 L/min | Normal | Coolant Line 1
+2024-01-15 08:00:01 INFO     [VOLT-005]   Daily check: 229.9 V | Normal | Electrical Panel C
+2024-01-15 08:00:01 INFO     [VIB-006]    Daily check: 0.44 mm/s | Normal | Pump Station 2
