@@ -1,0 +1,180 @@
+MAINTENANCE REPORT — FACILITY: WESTFIELD INDUSTRIAL PLANT
+Report ID: MR-2024-0042
+Date: 2024-01-15
+Prepared by: J. Harrington, Senior Maintenance Engineer
+Reviewed by: T. Okonkwo, Plant Operations Manager
+
+===========================================================================
+EXECUTIVE SUMMARY
+===========================================================================
+
+This report documents scheduled and corrective maintenance activities
+performed during the period 2024-01-10 to 2024-01-15 at the Westfield
+Industrial Plant. Four maintenance interventions were completed, two of
+which were emergency call-outs triggered by sensor alerts. All critical
+systems have been returned to operational status.
+
+===========================================================================
+1. BOILER ROOM A — HEAT EXCHANGER INSPECTION (Planned)
+===========================================================================
+
+Work Order:     WO-2024-0088
+Equipment:      Shell-and-tube heat exchanger HX-101
+Location:       Boiler Room A
+Date/Time:      2024-01-10, 08:00–14:30
+Technicians:    M. Santos, R. Patel
+
+Findings:
+- Scale build-up detected on tube surfaces (estimated 3 mm thickness)
+  on the hot-side inlet section. Scale type: calcium carbonate.
+- Overall heat transfer coefficient reduced by approximately 18% compared
+  to last inspection baseline (October 2023).
+- Shell-side pressure drop: 0.38 bar (acceptable limit: 0.50 bar).
+- No tube leaks detected during hydrostatic pressure test at 8.5 bar.
+
+Actions taken:
+- Chemical descaling performed using 10% citric acid solution. Circulation
+  time: 4 hours. pH monitored continuously; neutralised to pH 7.0 before drain.
+- Post-cleaning efficiency test confirms heat transfer coefficient restored
+  to within 5% of baseline.
+- Temperature sensor TEMP-001 calibration verified: offset = +0.3°C applied.
+
+Recommendations:
+- Reduce water treatment dosing interval from monthly to bi-weekly to
+  prevent future scale build-up.
+- Schedule next inspection in 6 months (target: 2024-07-10).
+
+===========================================================================
+2. COOLANT LINE 1 — PUMP BEARING FAILURE (Emergency)
+===========================================================================
+
+Work Order:     WO-2024-0089
+Equipment:      Centrifugal pump P-204, Coolant Line 1
+Location:       Pump Station 2
+Date/Time:      2024-01-14, 22:15–2024-01-15, 03:40
+Technicians:    A. Kowalski (on-call), D. Fletcher
+
+Trigger:
+Sensor VIB-006 reported vibration levels exceeding 1.5 mm/s at 22:15 on
+2024-01-14. Simultaneously, flow sensor FLOW-004 began registering a
+declining flow rate on Coolant Line 1 (from nominal 12.4 L/min to 4.1 L/min
+by 01:00 on 2024-01-15). Alert threshold: 5.0 L/min.
+
+Root cause:
+Inspection found premature failure of the drive-end roller bearing (SKF
+6310-2RS1). Bearing inner race showed spalling consistent with water
+ingress. Seal failure identified as contributing factor — lip seal on
+shaft had hardened and cracked, allowing coolant to contaminate the
+bearing grease.
+
+Actions taken:
+- Pump P-204 isolated and de-energised under LOTO procedure.
+- Defective bearing replaced with SKF 6310-2RS1/C3 (updated clearance
+  specification for high-moisture environments).
+- Shaft lip seal replaced with PTFE-lined variant (part #SL-204-PTFE).
+- Bearing housing cleaned and repacked with water-resistant grease
+  (Mobil Polyrex EM).
+- Pump re-commissioned at 07:00 on 2024-01-15. Flow rate restored to
+  12.4 L/min. Vibration reading post-repair: 0.43 mm/s (within normal).
+
+Parts used:
+- 1× SKF 6310-2RS1/C3 bearing (stock item)
+- 1× Lip seal SL-204-PTFE (ordered from warehouse)
+- 0.5 kg Mobil Polyrex EM grease
+
+Estimated downtime cost: ~£3,200 (12 hours partial capacity reduction on
+Coolant Line 1).
+
+Recommendations:
+- Replace all same-type seals on pumps P-205 and P-206 proactively during
+  next scheduled maintenance window.
+- Install moisture detector in pump housing P-204, P-205, P-206.
+- Increase vibration monitoring frequency for VIB-006 from 10-minute to
+  5-minute intervals for the next 30 days.
+
+===========================================================================
+3. STORAGE TANK B — HUMIDITY INGRESS INVESTIGATION (Emergency)
+===========================================================================
+
+Work Order:     WO-2024-0090
+Equipment:      Storage Tank B, humidity control system
+Location:       Storage Tank B, Section 4
+Date/Time:      2024-01-15, 01:00–06:30
+Technicians:    P. Nguyen, L. Osei
+
+Trigger:
+Sensor HUM-003 recorded humidity exceeding 70% at 00:30 on 2024-01-15.
+Normal operating range: 40–60%. Critical threshold: 70%.
+
+Root cause:
+Roof panel joint sealant on Tank B had degraded (UV exposure over 3+
+years). Overnight rain ingress raised internal humidity rapidly. Secondary
+finding: dehumidifier DEHUM-B1 was non-operational due to a failed
+compressor capacitor (failed silently — no alert generated).
+
+Actions taken:
+- Emergency application of polyurethane roof sealant to affected joint
+  (approx. 4 m linear). Temporary tarpaulin deployed pending full repair.
+- Compressor capacitor on DEHUM-B1 replaced (20 μF, 450 V AC unit).
+  Dehumidifier tested and returned to service at 03:15.
+- Tank B humidity returned to 47% by 06:30.
+
+Recommendations:
+- Schedule full roof resealing for Tank B in Q2 2024.
+- Add monitoring alert for DEHUM-B1 operational status (current gap in
+  SCADA integration).
+- Review inspection schedule for all tank roof sealants — current interval
+  is 5 years, recommend reducing to 3 years.
+
+===========================================================================
+4. PIPELINE SECTION 3 — PRESSURE RELIEF VALVE TEST (Planned)
+===========================================================================
+
+Work Order:     WO-2024-0091
+Equipment:      Pressure relief valve PRV-303, Pipeline Section 3
+Location:       Pipeline Section 3, Junction Box J-12
+Date/Time:      2024-01-12, 09:00–11:30
+Technicians:    H. Lindqvist
+
+Findings:
+- PRV-303 set-point tested: lift pressure = 5.5 bar (specification: 5.5 ± 0.1 bar). PASS.
+- Seat tightness test: no visible leak at 5.0 bar for 5 minutes. PASS.
+- Body inspection: no external corrosion, mechanical damage, or leaks.
+- Pressure sensor PRES-002 cross-checked against calibrated reference gauge:
+  deviation = +0.03 bar (within ±0.05 bar tolerance). No recalibration required.
+
+Actions taken:
+- PRV-303 reinstalled, torqued to specification.
+- Test results logged in maintenance management system (MMS ref: T-PRV-303-2024).
+
+Next scheduled test: 2025-01-12 (annual interval per BS EN ISO 4126-1).
+
+===========================================================================
+OPEN ACTION ITEMS
+===========================================================================
+
+Ref    Description                                     Owner       Due Date
+----   -----------------------------------------------  ----------  ----------
+AI-01  Bi-weekly water treatment dosing (Boiler A)     M. Santos   2024-02-01
+AI-02  Proactive seal replacement P-205, P-206          A. Kowalski 2024-02-15
+AI-03  Moisture detector install P-204/205/206           D. Fletcher 2024-03-01
+AI-04  DEHUM-B1 SCADA alert integration                 IT/SCADA    2024-02-28
+AI-05  Full roof reseal Tank B                          P. Nguyen   2024-04-30
+AI-06  Review tank roof sealant inspection schedule     T. Okonkwo  2024-02-10
+
+===========================================================================
+PARTS CONSUMED
+===========================================================================
+
+Part Number     Description                             Qty    Cost (£)
+-----------     ------------------------------------    ---    --------
+SKF-6310-2RS1   Roller bearing SKF 6310-2RS1/C3          1      42.50
+SL-204-PTFE     PTFE lip seal, shaft 40mm                1      18.75
+MOB-POLYREX-1   Mobil Polyrex EM grease, 0.5 kg          1      12.00
+CAP-20UF-450V   Capacitor 20 μF 450 V AC                 1       6.80
+SEALANT-PU-400  PU roof sealant cartridge 400 ml          3      24.00
+                                               TOTAL:          £104.05
+
+===========================================================================
+END OF REPORT
+===========================================================================
